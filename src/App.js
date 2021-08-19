@@ -5,8 +5,8 @@ import './App.css';
 
 var heroback = {
   backgroundImage: `url(${wave}), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(${herobg})`,
-  backgroundPosition: '50% 100%, center, center',
-  backgroundSize: 'cover',
+  backgroundPosition: '60% 155%, center, center',
+  backgroundSize: 'auto, cover, cover',
   backgroundRepeat: 'no-repeat'
 };
 
@@ -34,7 +34,7 @@ function App() {
 
         </div>
 
-        <a href="#" className="order">
+        <a className="order">
 
         <h4>Order <br /> Now</h4>
         <img src={spoon} alt="" />

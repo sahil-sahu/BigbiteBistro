@@ -3,7 +3,6 @@
   text-align: center;
   /* color: ; */
   min-height: 100vh;
-  background: url("");
   color: #fff;
 }
 
@@ -33,7 +32,7 @@
 
 .hero .herohead h1.mainhead span{
 
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: 4px #fff;
   color: transparent;
 
 }
@@ -53,6 +52,7 @@
 
   background-color: #F31338;
   padding: 0.5rem 2rem; 
+  padding-top: 0.8rem;
   text-decoration: none !important;
   display: inline-flex;
   align-items: center;
@@ -67,7 +67,7 @@
   font-family: 'Khula', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 1.75rem;
   color: #fff;
   margin: 0rem 1rem;
 
@@ -79,7 +79,7 @@
 
   height: 5em;
   width: 5em;
-  transform: translateY(-0.6rem);
+  transform: translateY(-0.5rem);
 
 }
 
