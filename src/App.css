@@ -1,38 +1,94 @@
-.App {
+.hero {
+
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  /* color: ; */
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background: url("");
+  color: #fff;
+}
+
+.hero-container{
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  min-width: max-content;
+  text-align: center;
+  margin: auto;
+  display: block;
+
+}
+
+.hero .herohead h1.mainhead {
+
+  font-family: 'Khula', sans-serif;
+  font-weight: 800;
+  font-size: 6.5rem;
+  line-height: 5.8rem;
+  letter-spacing: -5px;
+  margin-bottom: 0px;
+
+}
+
+.hero .herohead h1.mainhead span{
+
+  -webkit-text-stroke: 3px #fff;
+  color: transparent;
+
+}
+
+.hero .maintext {
+
+  font-family: 'Khula', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -1px;
+
+
+}
+
+.hero .order{
+
+  background-color: #F31338;
+  padding: 0.5rem 2rem; 
+  text-decoration: none !important;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 600px;
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+.hero .order h4{
+  
+  display: inline;
+  font-family: 'Khula', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff;
+  margin: 0rem 1rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero .order img{
+
+  margin: 0rem 1rem;
+
+  height: 5em;
+  width: 5em;
+  transform: translateY(-0.6rem);
+
+}
+
+@media only screen and (max-width 1000px) {
+
+  .hero .herohead h1.mainhead{
+
+    font-size: 2rem;
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
