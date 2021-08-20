@@ -1,0 +1,85 @@
+.Dinein{
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: var(--golu), var(--golu), linear-gradient(to top, #fff 20%,#2D2D2D 20%, #2D2D2D 70%, #FEB92C 30%);
+    background-position: top, bottom, center;
+    overflow: hidden;
+
+}
+
+.dine-container{
+
+    width: 100%;
+    transform: translateY(10vh);
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+}
+
+.dine-container h2{
+
+    font-family: 'Khula', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 0rem;
+    letter-spacing: -5px;
+
+}
+.dine-container p{
+
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1px;
+
+}
+
+.dine-container img{
+
+    width: 80%;
+
+}
+
+.dine-container .crush{
+
+    margin: 1em auto 2em auto;
+    color: #fff;
+
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    
+    .Dinein{
+
+        min-height: unset;
+        height: auto;
+        background-size: 100%;
+        background-image: var(--golu), var(--golu), linear-gradient(to top, #fff 10%,#2D2D2D 10%, #2D2D2D 90%, #FEB92C 10%);
+        background-repeat: no-repeat;
+        background-position: top, bottom, center;
+    
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .dine-container h2{font-size: 3.5rem; letter-spacing: -2px;}  
+    .dine-container p{font-size: 1.5rem;line-height: 1.75rem;}  
+
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .dine-container h2{font-size: 2.8rem; letter-spacing: -2px;}  
+    .dine-container p{font-size: 1.5rem;line-height: 1.75rem;}
+    .dine-container .crush{margin: 1em auto 3em auto;}
+
+}
