@@ -1,16 +1,22 @@
 import React from 'react';
-import Header from "./components/header/header";
+import HeadUp from "./components/header/headup";
+import Headown from "./components/header/headown";
 import Hero from "./components/hero/hero";
 import Vector from "./components/dineIn/vector";
+import Facts from "./components/others/funServices";
+import Footer from "./components/others/footer";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Header location="0" />
-      <Header location="1" />
+    <>
+      <HeadUp />
       <Hero />
       <Vector />
-    </div>
+      <Headown />
+      <Facts />
+      <Footer />
+    </>  
   );
 }
 

@@ -32,7 +32,7 @@ const Hero = (props) => {
 
         </div>
 
-        <a className="order" href="#">
+        <a className="order" href="http://zoma.to/r/19732106">
 
           <h4>Order <br /> Now</h4>
           <img src={spoon} alt="" />

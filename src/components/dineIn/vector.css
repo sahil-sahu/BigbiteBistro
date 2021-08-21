@@ -5,7 +5,7 @@
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: var(--golu), var(--golu), linear-gradient(to top, #fff 20%,#2D2D2D 20%, #2D2D2D 70%, #FEB92C 30%);
+    background-image: var(--golu), var(--golu), linear-gradient(to top, #fff 20%,#2D2D2D 20%, #2D2D2D 80%, #FEB92C 20%);
     background-position: top, bottom, center;
     overflow: hidden;
 
@@ -49,6 +49,16 @@
 
     margin: 1em auto 2em auto;
     color: #fff;
+
+}
+
+@media only screen and (min-width: 1440px){
+
+    .dine-container .crush{
+
+        margin: 5% auto 10% auto;
+    
+    }
 
 }
 

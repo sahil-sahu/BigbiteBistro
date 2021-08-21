@@ -1,6 +1,6 @@
 header{
 
-    position: fixed;
+    position: absolute;
     width: 100%;
     max-width: 100rem;
     left: 50%;
@@ -11,27 +11,30 @@ header{
 }
 
 header.up{
-
+    /* position: absolute; */
     top:5%;
+    margin-top: 2%;
 
 }
 
 header.down{
 
-    bottom:-10%;
+    top:80vh;
+    position: fixed;
+    max-width: none;
 
 }
 
-header .brand img{
+header nav .brand img{
     
     position: absolute;
     left: 5%;
     width: 5rem;
-    height: auto;
+    height: 5.5rem;
     
 }  
 
-header button {
+header nav button {
     
     float: right;
     border-radius: 100%;
@@ -44,18 +47,17 @@ header button {
     
 }
 
-header button img, header .bottom button img{
+header nav button img{
     
     width: 3.5rem;
     height: 3.5rem;
 
 }
 
-/* header .bottom button{
+header .bottom button{
 
     float: left;
     border-radius: 100%;
-    padding: 0.5rem;
     border: none;
     background-color: transparent;
     cursor: context-menu;
@@ -64,28 +66,45 @@ header button img, header .bottom button img{
 
 }
 
+header .bottom button img{
+
+    width: 4rem;
+    height: 4rem;
+
+}
+
 header .bottom a img{
 
-    width: 5rem;
+    width: 4.5rem;
     float: right;
     position: absolute;
-    left: 5%;
+    right: 5%;
 
-} */
+}
 
 @media only screen and (max-width: 1000px) {
     
-    .nav button img{width: 2.5rem; height: 2.5rem;}
-    .nav .brand img{width: 3.5rem;}
+    header.up button img{width: 2.6rem !important; height: 2.5rem !important;}
+    header.up .brand img{width: 3.5rem !important; height: 3.8rem !important;}
+    header.down button img{width: 2.6rem !important; height: 2.6rem !important;}
+    header.down .brand img{width: 3rem !important; height: 3rem !important;}
+    header.down{
+
+        top:250vh;
+    
+    }
 
 }
 
 @media only screen and (max-width: 550px) {
     
-    .nav button img{width: 1.5rem; height: 1.5rem;}
-    .nav .brand img{width: 2.5rem;}
+    header.up button img{width: 1.55rem !important; height: 1.5rem !important;}
+    header.up .brand img{width: 2.5rem !important;height: 2.7rem !important}
+    header.down{
 
+        top:210vh;
     
+    }
 
 }
 
