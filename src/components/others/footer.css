@@ -1,0 +1,293 @@
+footer{
+
+    color: #fff;
+    background-image: var(--golu), linear-gradient(to bottom,#fff 40%, #2d2d2d 40%);
+    background-repeat: no-repeat;
+    background-size: 150vw;
+    background-position: top;
+    margin-top: 4rem;
+    overflow-x: hidden;
+
+}
+
+footer .footcontainer{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 4rem;
+    padding: 6rem 2rem 0rem 2rem;
+    max-width: 70rem;
+    margin: auto;
+    font-family: 'Khula', sans-serif;
+    align-items: flex-start;
+    min-width: 80vw;
+
+}
+
+footer .footcontainer div{height: 90%;}
+
+footer .footcontainer .address{
+
+    border-right: #fff 2px solid;
+    padding: 10px;
+
+}
+footer .footcontainer h3{
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 2.3rem;
+
+}
+
+footer .footcontainer h4{
+
+    font-size: 1.4rem;    
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.5rem;
+
+}
+
+footer .footcontainer p{
+
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+
+}
+
+footer .footcontainer iframe{
+
+    border-radius: 15px;
+
+}
+
+footer .footcontainer .zoswig{
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+footer .footcontainer .footorder .qlinks li{
+
+    list-style: none;
+    margin: 3px;
+
+}
+
+footer .footcontainer .footorder .qlinks li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    transition: 0.1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+}
+
+footer .footcontainer .footorder .qlinks li:hover{
+
+    transform: translateX(1rem);
+
+}
+
+footer .footcontainer .zoswig a{
+
+    margin: 2px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+footer .footcontainer .zoswig a:hover img{
+
+    transform: scale(0.8);
+
+}
+
+footer .footcontainer img{
+    
+    border-radius: 100%;
+    width: 3.5rem;
+    height: auto;
+
+}
+
+footer .footcontainer .contacts{
+
+    border-left: #fff 2px solid;
+    padding: 10px;
+    padding-left: 1.5rem;
+
+}
+
+footer .footcontainer .contacts li{
+
+    list-style: none;
+    margin: 0px auto;
+
+}
+
+footer .footcontainer .contacts .phone li i {
+    
+    color: #fff;
+    transform: scale(1.6);
+    margin: 0.8rem 1rem;
+    padding: 5px;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+footer .footcontainer .contacts .phone li:nth-child(1):hover i{
+
+    transform: scale(1.4);
+    width: 0.8rem;
+
+}
+footer .footcontainer .contacts .phone li:nth-child(2) i{ transform: scale(1.8);}
+footer .footcontainer .contacts .phone li:nth-child(2):hover i,footer .footcontainer .contacts .social li:hover i{
+
+    width: 0.8rem;
+    transform: scale(1.6);
+
+}
+
+footer .footcontainer .contacts .phone li a{
+
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.1s;
+
+}
+
+footer .footcontainer .contacts .social{
+
+    display: flex;
+    margin: 0px;
+    justify-content: flex-start;
+
+}
+
+footer .footcontainer .contacts .social i{
+
+    transform: scale(1.8);
+    color: #fff;
+    padding: 3px;
+    border-radius: 25%;
+    transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+footer .footcontainer .contacts .social li{
+
+    width: 2rem;
+    height: 2rem;
+    margin: 0.1rem 1rem;
+    text-align: center;
+    
+}
+
+footer .footcontainer .contacts .rateus{
+
+    color: #fff;
+
+}
+
+footer .footest{
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+
+}
+
+footer .footest a{
+
+    font-family: 'Original Surfer', cursive;
+    color: #55FFFF;
+
+}
+
+@media only screen and (max-width: 1000px){
+
+    footer .footcontainer{
+
+        grid-template-columns: repeat(2, 1fr);
+        gap : 4rem;
+        padding: 6rem 2rem 0rem 2rem;
+        max-width: 70rem;
+        margin: auto;
+        font-family: 'Khula', sans-serif;
+        align-items: flex-start;
+        min-width: 80vw;
+
+    }
+
+    footer .footcontainer .address{
+
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    footer{
+        background-image: var(--golu), linear-gradient(to bottom,#fff 10%, #2d2d2d 10%);
+    }
+    footer .footcontainer{
+
+        grid-template-columns: repeat(1, 1fr);
+        gap : 4rem;
+        padding: 6rem 2rem 0rem 2rem;
+        max-width: 70rem;
+        margin: auto;
+        font-family: 'Khula', sans-serif;
+        align-items: flex-start;
+        min-width: 80vw;
+        gap : 0.5rem;
+
+    }
+
+    footer .footcontainer > div{height: max-content; border: none !important;}
+
+    footer .footcontainer .address{
+
+        grid-column-start: unset;
+        grid-column-end: unset;
+        padding: 0px;
+
+    }
+
+    footer .footcontainer .address iframe{width: 100%;}
+
+    footer .footcontainer h3{
+
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 2.3rem;
+    
+    }
+
+    footer .footcontainer h4{font-size: 1.2rem;}
+    footer .footcontainer p{font-size: 1rem;}
+    footer .footcontainer .footorder .qlinks li a{font-size: 1rem;}
+    footer .footcontainer .contacts .phone li a{font-size: 1.05rem;}
+    footer .footcontainer .contacts .social{justify-content: center;text-align: center;}
+    footer .footcontainer .contacts .rateus{width: fit-content;}
+    footer .footest{font-size: 1.2rem;}
+    
+}

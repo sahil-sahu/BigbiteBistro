@@ -81,6 +81,7 @@
     margin: auto;
     border-radius: 5rem;
     transition: 0.5s;
+    padding-bottom: 0.5rem;
     box-shadow: inset 0px 0px 75px rgba(222, 222, 222, 0.2), 0px 4px 25px rgba(222, 222, 222, 0.8);
 
 }
@@ -129,8 +130,8 @@
     .Services .service-items{gap:1rem}
     .Services .service-item{
         width: 40vw;
-        height: 50vw;
-        border-radius: 3rem;
+        height: auto;
+        border-radius: 2rem;
         overflow-x: hidden;
         /* margin: 1rem 0rem; */
     }
