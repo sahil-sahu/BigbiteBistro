@@ -8,9 +8,27 @@ import Footer from "./components/others/footer";
 import "./App.css";
 
 function Main() {
+  var boo = false;
+  function backup(e){
+      if(boo){
+          boo = false;
+          document.getElementById("main").style.transform =  `scale(1) translate(0,0)`;
+      }
+    }
+
+    function slidein(e){
+      if(!boo){
+      setTimeout(function(){ 
+        document.getElementById("main").style.transform =  `scale(1) translate(-25%,25%)`;
+        boo = true;
+      }, 1);  
+      }
+    }
+
+
   return (
-    <div className="swiper-content main-content">
-      <HeadUp />
+    <div className="main-content" id="main"  onClick={backup}>
+      <HeadUp slipped={slidein} />
       <Hero />
       <Vector />
       {/* <Headown /> */}

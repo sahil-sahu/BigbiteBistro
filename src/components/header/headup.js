@@ -6,14 +6,14 @@ import './header.css';
 const HeadUp = (props) => {
 
   return (
-    <header className="up">
+    <header className="up" id="up">
         <nav className="nav">
 
             <a href="http://zoma.to/r/19732106" className="brand" >
                 <img src={logo} alt="" />
             </a>
 
-            <button>
+            <button className="hamenu" onClick={props.slipped}>
                 <img src={ham} alt="" />
             </button>
 

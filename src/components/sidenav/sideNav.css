@@ -1,5 +1,52 @@
 .sidenav{
 
-    display: none;
+    height: 100vh;
+    width:25vw;
+    background-color: #2d2d2d;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: -9;
+    text-align: right;
+    color: #fff;
+    font-family: 'Khula', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    letter-spacing: -5px;
+    margin-bottom: 0px;
+    /* display: none; */
 
 }
+
+.main-content{
+
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 0;
+    background-color: #fff;
+    transform:scale(1);
+    /* transform:scale(1) translate(-25%,25%); */
+    transform-origin: left bottom;
+    transition: 0.3s;
+
+}
+
+.topnav{
+
+    background-color: #2d2d2d;
+    width: 75vw;
+    right: 100%;
+    z-index: -9;
+    height: 25vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    color: #fff;
+
+}
+
+.scripts{display: none;}

@@ -61,6 +61,7 @@ footer .footcontainer p{
 footer .footcontainer iframe{
 
     border-radius: 15px;
+    border: 0;
 
 }
 

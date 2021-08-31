@@ -1,19 +1,19 @@
 header{
 
-    position: absolute;
-    width: 100%;
+    position: sticky;
+    /* width: 100%; */
+    height: fit-content;
     max-width: 100rem;
     left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    z-index: 9999;
+    /* transform: translateX(-50%); */
+    /* margin: auto; */
+    z-index: 9;
 
 }
 
 header.up{
     /* position: absolute; */
     top:5%;
-    margin-top: 2%;
 
 }
 
@@ -43,8 +43,16 @@ header nav button {
     border: none;
     position: absolute;
     right: 5%;
+    cursor: pointer;
     box-shadow: inset 0px 0px 4px  hsla(0, 0%, 100%, 0.2);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
     
+}
+
+header nav button:hover{
+
+    transform: scale(0.9);
+
 }
 
 header nav button img{
