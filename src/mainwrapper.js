@@ -12,6 +12,8 @@ function Main() {
   function backup(e){
       if(boo){
           boo = false;
+          document.getElementById("sidenav").style.zIndex = -1;
+          document.getElementById("topnav").style.zIndex = -1;
           document.getElementById("main").style.transform =  `scale(1) translate(0,0)`;
       }
     }
@@ -21,6 +23,12 @@ function Main() {
       setTimeout(function(){ 
         document.getElementById("main").style.transform =  `scale(1) translate(-25%,25%)`;
         boo = true;
+        setTimeout(() => {
+
+          document.getElementById("sidenav").style.zIndex = 1;
+          document.getElementById("topnav").style.zIndex = 1;
+
+        },500)
       }, 1);  
       }
     }

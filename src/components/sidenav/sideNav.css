@@ -1,24 +1,57 @@
 .sidenav{
 
     height: 100vh;
-    width:25vw;
+    width:20vw;
     background-color: #2d2d2d;
     position: fixed;
+    cursor: pointer;
     top: 0%;
     right: 0%;
-    z-index: -9;
+    z-index: -1;
     text-align: right;
     color: #fff;
     font-family: 'Khula', sans-serif;
     font-weight: 800;
     font-size: 4rem;
-    line-height: 5.8rem;
+    line-height: 4.5rem;
     letter-spacing: -5px;
     margin-bottom: 0px;
-    /* display: none; */
+    transition: 0ms;
+    padding: 2rem 2rem 0px 0px;
 
 }
 
+.sidenav h2{
+
+    font-family: 'Khula', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 0rem;
+    letter-spacing: -5px;
+
+}
+
+.sidenav li{
+
+    list-style: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+
+}
+
+.sidenav li a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+.sidenav li:hover{
+
+    transform: translateX(-1rem);
+
+}
 .main-content{
 
     width: 100vw;
@@ -39,14 +72,159 @@
     background-color: #2d2d2d;
     width: 75vw;
     right: 100%;
-    z-index: -9;
+    z-index: -1;
     height: 25vh;
     position: fixed;
     top: 0%;
     left: 0%;
     margin: 0%;
     color: #fff;
+    transition: 0ms;
+
+
+}
+
+.topnav ul{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+        
+}
+
+.topnav li{
+
+    list-style: none;
+    align-self: center;
+    margin: 0%;
+
+}
+
+.topnav li:hover{
+
+    transform: scale(0.9);
+
+}
+.topnav img{
+
+    width: 3rem;
+    height: 3rem;
 
 }
 
 .scripts{display: none;}
+
+@media only screen and (max-width: 1000px) {
+    .sidenav li{
+
+        list-style: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: -1px;
+    
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sidenav{
+
+        height: 25vh;
+        width: 100vw;
+        position: fixed;
+        cursor: pointer;
+        top: 0%;
+        left: 0%;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 0px auto;
+        transition: 0ms;
+        padding: 0px;
+    
+    }
+    
+    .sidenav h2{
+    
+        font-family: 'Khula', sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 0rem;
+        letter-spacing: -1px;
+    
+    }
+
+    .sidenav ul{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0% auto;
+        text-align: center !important;
+        width: fit-content;
+
+    }
+    
+    .sidenav li{
+    
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin: 5px;
+        transform: translateX(-50%);
+    
+    }
+    
+    .sidenav li a{
+    
+        color: #fff;
+        text-decoration: none;
+        padding: 0%;
+        margin: 0%;
+        line-height: .5rem;
+    
+    }
+    .sidenav li:hover{
+    
+        transform: translateX(-1rem);
+    
+    }
+
+    .topnav{
+
+        background-color: #2d2d2d;
+        width: 25vw;
+        left: 100%;
+        transform: translate(-100%,-100%);
+        height: 65vh;
+        position: fixed;
+        top: 100%;
+        transform-origin: bottom right;
+        margin: 0%;
+        color: #fff;
+        transition: 0ms;
+        padding: 0%;
+    
+    }
+    .topnav ul{
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        height: 100%;
+            
+    }
+
+    .topnav img{
+
+        width: 2rem;
+        height: 2rem;
+        margin: 0%;
+    }
+    .sidenav li:hover{
+
+        transform: scale(.9);
+    
+    }
+}

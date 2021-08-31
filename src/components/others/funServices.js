@@ -14,9 +14,9 @@ function Facts() {
        <div className="factcontainer">
         <h2>Fun <br /> Facts</h2>
         <ul>
-            <li><img src={bullet} alt="*" /> <span>me make burgers none of bun tikki.</span></li>
+            <li><img src={bullet} alt="*" /> <span>we make real burgers none of those bun tikkis.</span></li>
             <li><img src={bullet} alt="*" /> <span>we don't have refridgerator for base, buns & breads that's why we always have to make fresh products.</span></li>
-            <li><img src={bullet} alt="*" /> <span>we are free of lavour aggregators and artificial colours also we are organic.</span></li>
+            <li><img src={bullet} alt="*" /> <span>we are always free of flavour aggregators and artificial colours also we are as organic as MamaEarth's ads.</span></li>
         </ul>
        </div>
     </section>
