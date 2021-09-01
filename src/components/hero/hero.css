@@ -8,7 +8,7 @@
     justify-content: center;
     overflow: hidden;
     color: #fff;
-    background-position : 60% 170%, center, center;
+    background-position : 60% 155%, center, center;
     background-size: 125%, cover, cover;
     background-repeat: no-repeat;
     background-image: var(--hill), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), var(--herobg);
@@ -142,8 +142,8 @@
 @media only screen and (max-width: 550px) {
   .hero{
 
-    background-image: var(--hill), linear-gradient(to top, #FEB92C 10%, rgba(0,0,0,0.6) 10%), var(--herobg);
-    background-position : 25% 90%, center, center;
+    background-image: var(--hill), linear-gradient(to top, #FEB92C 20%, rgba(0,0,0,0.6) 20%), var(--herobg);
+    background-position : 25% 80%, center, center;
 
   }
   .hero .herohead h1.mainhead{font-size: 3rem; line-height: 4.5rem; letter-spacing: -3px;}
