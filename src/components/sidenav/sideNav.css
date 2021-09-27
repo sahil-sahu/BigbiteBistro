@@ -61,7 +61,6 @@
     display: flex;
     align-items: center;
     transform-origin: top right;
-    transform: skew(10deg,-10deg);
 
 }
 
@@ -73,7 +72,7 @@
 }
 .sidenav li:hover{
 
-    transform: scale(.9);
+    transform: scale(.9) skew(10deg,-10deg);
 
 }
 .main-content{
@@ -85,7 +84,6 @@
     z-index: 0;
     background-color: #fff;
     transform:scale(1);
-    /* transform:scale(1) translate(-25%,25%); */
     transform-origin: left bottom;
     transition: 0.3s;
 
@@ -297,7 +295,7 @@
 
     .sidenav li:hover{
 
-        transform: scale(.9);
+        transform: scale(.9) skew(10deg,-10deg);
     
     }
 }

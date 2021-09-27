@@ -1,9 +1,9 @@
 header{
 
     position: sticky;
-    width: 100%;
+    width: 90%;
     max-width: 100rem;
-    left: 50%;
+    /* left: 50%; */
     /* transform: translateX(-50%); */
     margin: auto;
     z-index: 9;
@@ -13,6 +13,8 @@ header{
 header.up{
     /* position: absolute; */
     top:5%;
+    /* height: 10rem; */
+    background-color: aquamarine;
 
 }
 
@@ -54,6 +56,30 @@ header nav button:hover{
 
 }
 
+@keyframes hamburg {
+    from{opacity: 1;transform: rotate(0deg);}
+    to{opacity: 0;transform: rotate(45deg);}
+}
+
+@keyframes hamburg-i {
+    from{opacity: 0;transform: rotate(45deg);}
+    to{opacity: 1;transform: rotate(0deg);}
+}
+
+header nav button #ham div{
+
+    width: 3rem;
+    height: .5rem;
+    border-radius: 10rem;
+    background-color: #fff;
+    margin: 5px;
+    position: absolute;
+    top: 40%;
+
+}
+
+header nav button #ham{opacity: 0;}
+
 header nav button img{
     
     width: 3.5rem;
@@ -93,6 +119,7 @@ header .bottom a img{
     
     header.up button img{width: 2.6rem !important; height: 2.5rem !important;}
     header.up .brand img{width: 3.5rem !important; height: 3.8rem !important;}
+    header nav button #ham div{width: 2rem;height: .3rem;}
     header.down button img{width: 2.6rem !important; height: 2.6rem !important;}
     header.down .brand img{width: 3rem !important; height: 3rem !important;}
     header.down{
@@ -106,6 +133,7 @@ header .bottom a img{
 @media only screen and (max-width: 550px) {
     
     header.up button img{width: 1.55rem !important; height: 1.5rem !important;}
+    header nav button #ham div{width: 1.5rem;height: .3rem;left: 10%;top: 35%;}
     header.up .brand img{width: 2.5rem !important;height: 2.7rem !important}
     header.down{
 

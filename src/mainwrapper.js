@@ -4,6 +4,7 @@ import HeadUp from "./components/header/headup";
 import Hero from "./components/hero/hero";
 import Vector from "./components/dineIn/vector";
 import Facts from "./components/others/funServices";
+import Testi from "./components/others/testi";
 import Footer from "./components/others/footer";
 import "./App.css";
 
@@ -15,6 +16,10 @@ function Main() {
           document.getElementById("sidenav").style.zIndex = -1;
           document.getElementById("topnav").style.zIndex = -1;
           document.getElementById("main").style.transform =  `scale(1) translate(0,0)`;
+          document.getElementById("hamy").style.animation = `hamburg-i .5s forwards`;
+          document.getElementById("ham").style.opacity = 0;
+          document.getElementById("hamer").style.transform = `rotateZ(0deg)`;
+          document.getElementById("hamer-i").style.transform = `rotateZ(0deg)`;
       }
     }
 
@@ -22,6 +27,10 @@ function Main() {
       if(!boo){
       setTimeout(function(){ 
         document.getElementById("main").style.transform =  `scale(1) translate(-25%,25%)`;
+        document.getElementById("hamy").style.animation = `hamburg .5s forwards`;
+        document.getElementById("ham").style.opacity = 1;
+        document.getElementById("hamer").style.transform = `rotateZ(45deg)`;
+        document.getElementById("hamer-i").style.transform = `rotateZ(-45deg)`;
         boo = true;
         setTimeout(() => {
 
@@ -41,6 +50,7 @@ function Main() {
       <Vector />
       {/* <Headown /> */}
       <Facts />
+      <Testi />
       <Footer />
     </div>
   );

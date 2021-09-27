@@ -14,7 +14,11 @@ const HeadUp = (props) => {
             </a>
 
             <button className="hamenu" onClick={props.slipped}>
-                <img src={ham} alt="" />
+                <img src={ham} id="hamy" alt="" />
+                <div id="ham">
+                  <div id="hamer"></div>
+                  <div id="hamer-i"></div>
+                </div>
             </button>
 
         </nav>
